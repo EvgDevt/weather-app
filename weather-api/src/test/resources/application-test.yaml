@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/capstone_weather_app_test
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: false
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate

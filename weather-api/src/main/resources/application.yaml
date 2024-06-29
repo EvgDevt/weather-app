@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: weather-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/capstone_weather_app
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    schemas:
+      - public
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    open-in-view: false
+application:
+  security:
+    jwt:
+      secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000
